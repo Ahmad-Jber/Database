@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FF6B5509-B523-BF39-5667-B93BCA740E59" schemaObject="8D4513D4-449F-C609-5293-ADDC18709549" name="USERS">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>ROOT</sourceObjSchema>
+<sourceObjName>USERS</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:27 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USER_ID" id="0E8256EF-57FA-FC0D-EB75-D76E1A1D9FA7">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>USERS</sourceObjSchema>
+<sourceObjName>USER_ID</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FULL_NAME" id="9B97916D-D47A-D04A-0304-320D544B1288">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>USERS</sourceObjSchema>
+<sourceObjName>FULL_NAME</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400 BYTE</dataTypeSize>
+<ownDataTypeParameters>400 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="O_NAME" id="9289DA7C-4649-8FF2-5024-A2FADBC5C0A6">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>USERS</sourceObjSchema>
+<sourceObjName>O_NAME</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASS" id="3BD563D1-D74E-2E6E-B860-B97E7D6E737B">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>USERS</sourceObjSchema>
+<sourceObjName>PASS</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENDER" id="DAE7C577-F703-3E1C-92BB-C6BD2EEB5AE6">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>USERS</sourceObjSchema>
+<sourceObjName>GENDER</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BIRTHDATE" id="EA263503-E0D4-E2A9-8F64-700CC9530171">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>USERS</sourceObjSchema>
+<sourceObjName>BIRTHDATE</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="78C95CAA-9B39-E65D-A73F-5F57C39345CB" schemaObject="8D4513D4-449F-C609-5293-ADDC18709549" name="USERS_PK">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>ROOT</sourceObjSchema>
+<sourceObjName>SYS_C007028</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E8256EF-57FA-FC0D-EB75-D76E1A1D9FA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

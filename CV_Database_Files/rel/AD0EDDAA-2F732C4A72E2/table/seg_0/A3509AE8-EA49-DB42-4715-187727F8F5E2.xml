@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A3509AE8-EA49-DB42-4715-187727F8F5E2" schemaObject="8D4513D4-449F-C609-5293-ADDC18709549" name="CERTIFICATIONS">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>ROOT</sourceObjSchema>
+<sourceObjName>CERTIFICATIONS</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:27 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CERT_ID" id="B3734AC0-2DB3-54D6-E087-96BB7FBEB42F">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>CERTIFICATIONS</sourceObjSchema>
+<sourceObjName>CERT_ID</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYPE" id="E28CBAB2-26F9-9E08-6875-5C859A7A0850">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>CERTIFICATIONS</sourceObjSchema>
+<sourceObjName>TYPE</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITLE" id="295F9670-68EE-46BF-2EB7-A6FE6844C0A2">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>CERTIFICATIONS</sourceObjSchema>
+<sourceObjName>TITLE</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SOURCE" id="6074B3BA-8CCC-A08A-AF1A-A516F2A826F2">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>CERTIFICATIONS</sourceObjSchema>
+<sourceObjName>SOURCE</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CF15875C-DAFD-48C0-ABC1-B5BF83A7002E" schemaObject="8D4513D4-449F-C609-5293-ADDC18709549" name="CERTIFICATIONS_PK">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>ROOT</sourceObjSchema>
+<sourceObjName>SYS_C007029</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3734AC0-2DB3-54D6-E087-96BB7FBEB42F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

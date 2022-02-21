@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="888AF9A9-F3B9-056E-B9EB-DB083F14A05B" name="USERS">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:46:06 UTC</createdTime>
+<generatorID>FF6B5509-B523-BF39-5667-B93BCA740E59</generatorID>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<engineerTo>
+<item key="AD0EDDAA-2DB5-5AF5-5E93-2F732C4A72E2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="USER ID" id="8A656EA0-7C20-E6E6-0984-D535DAF77266">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:46:06 UTC</createdTime>
+<generatorID>0E8256EF-57FA-FC0D-EB75-D76E1A1D9FA7</generatorID>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<engineerTo>
+<item key="AD0EDDAA-2DB5-5AF5-5E93-2F732C4A72E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FULL NAME" id="40410734-E56D-952B-FDDE-1D092B96990C">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:46:06 UTC</createdTime>
+<generatorID>9B97916D-D47A-D04A-0304-320D544B1288</generatorID>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<engineerTo>
+<item key="AD0EDDAA-2DB5-5AF5-5E93-2F732C4A72E2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400 BYTE</dataTypeSize>
+<ownDataTypeParameters>400 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="O NAME" id="A9C4184A-E6D2-CB22-3203-696EF790C05D">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:46:06 UTC</createdTime>
+<generatorID>9289DA7C-4649-8FF2-5024-A2FADBC5C0A6</generatorID>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<engineerTo>
+<item key="AD0EDDAA-2DB5-5AF5-5E93-2F732C4A72E2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PASS" id="B283C7E9-4340-9E25-F59A-45AF5898F59B">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:46:06 UTC</createdTime>
+<generatorID>3BD563D1-D74E-2E6E-B860-B97E7D6E737B</generatorID>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<engineerTo>
+<item key="AD0EDDAA-2DB5-5AF5-5E93-2F732C4A72E2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GENDER" id="CB938D17-E562-16B0-C96B-46307D5A6B54">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:46:06 UTC</createdTime>
+<generatorID>DAE7C577-F703-3E1C-92BB-C6BD2EEB5AE6</generatorID>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<engineerTo>
+<item key="AD0EDDAA-2DB5-5AF5-5E93-2F732C4A72E2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BIRTHDATE" id="1ECC2FA8-31B2-9543-FCBA-893AC01CCDAF">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:46:06 UTC</createdTime>
+<generatorID>EA263503-E0D4-E2A9-8F64-700CC9530171</generatorID>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<engineerTo>
+<item key="AD0EDDAA-2DB5-5AF5-5E93-2F732C4A72E2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="63A8D229-59A9-1B39-57CC-4A3F11008413" name="USERS PK">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:46:06 UTC</createdTime>
+<generatorID>78C95CAA-9B39-E65D-A73F-5F57C39345CB</generatorID>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<engineerTo>
+<item key="AD0EDDAA-2DB5-5AF5-5E93-2F732C4A72E2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8A656EA0-7C20-E6E6-0984-D535DAF77266</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

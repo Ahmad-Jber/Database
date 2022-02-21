@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="CV_Database_Files" id="53172640-1576-6D78-D768-A067C5A09DA0" version="3.5">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:40:59 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>53172640-1576-6D78-D768-A067C5A09DA0</designId>
+</OSDM_Design>

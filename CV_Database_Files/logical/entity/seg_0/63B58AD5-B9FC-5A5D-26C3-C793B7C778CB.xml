@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="63B58AD5-B9FC-5A5D-26C3-C793B7C778CB" name="USER CONTACTS">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:46:06 UTC</createdTime>
+<generatorID>3D42F6DA-12CC-13B9-681F-F362A216922C</generatorID>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<engineerTo>
+<item key="AD0EDDAA-2DB5-5AF5-5E93-2F732C4A72E2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="USER ID" id="D8B7901E-BEC8-E2D2-B83F-9645216921E7">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:46:06 UTC</createdTime>
+<generatorID>F9DC7F74-1605-53E0-4C20-144655605E05</generatorID>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<engineerTo>
+<item key="AD0EDDAA-2DB5-5AF5-5E93-2F732C4A72E2" value="true"/>
+</engineerTo>
+<referedAttribute>8A656EA0-7C20-E6E6-0984-D535DAF77266</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONTACT NUM" id="6C359276-701B-BDF2-3D9B-8D7D9124DEBC">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:46:06 UTC</createdTime>
+<generatorID>7A73007B-882F-A206-4B9E-0C23E6E853F4</generatorID>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<engineerTo>
+<item key="AD0EDDAA-2DB5-5AF5-5E93-2F732C4A72E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TYPE ID" id="FF48DE76-0717-2A87-278A-C45C63ADDB6E">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:46:06 UTC</createdTime>
+<generatorID>16BCE707-620C-7140-010A-A0D9263D8D5E</generatorID>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<engineerTo>
+<item key="AD0EDDAA-2DB5-5AF5-5E93-2F732C4A72E2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>94D347E4-879F-CE13-BBEF-10B9321F2A43</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONTACT ADDRESS" id="16E9BAD8-B1F6-B948-B735-230C44145F74">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:46:06 UTC</createdTime>
+<generatorID>A0F2EB14-AB71-03F8-3231-780E9018F037</generatorID>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<engineerTo>
+<item key="AD0EDDAA-2DB5-5AF5-5E93-2F732C4A72E2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TYPE DESC" id="53D18E77-EC0C-C698-AA45-AAF5EF011EBD">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:46:06 UTC</createdTime>
+<generatorID>DF1B0F37-FA18-615C-904B-37A3AAF4C877</generatorID>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<engineerTo>
+<item key="AD0EDDAA-2DB5-5AF5-5E93-2F732C4A72E2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="03D3BDA0-FF04-37C4-D0A7-E20B80ABDFE7" name="COMP KEY UCO">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:46:06 UTC</createdTime>
+<generatorID>F2885017-5520-8872-4E6E-CC668249AA5B</generatorID>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<engineerTo>
+<item key="AD0EDDAA-2DB5-5AF5-5E93-2F732C4A72E2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D8B7901E-BEC8-E2D2-B83F-9645216921E7</attributeRef>
+<attributeRef>6C359276-701B-BDF2-3D9B-8D7D9124DEBC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

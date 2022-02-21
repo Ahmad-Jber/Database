@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="D7F8D525-ACA8-FD58-380C-81A4E19E3B40" mainViewID="B8473514-CAD3-AEEA-4BE7-061FCD33FE27">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:40:59 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

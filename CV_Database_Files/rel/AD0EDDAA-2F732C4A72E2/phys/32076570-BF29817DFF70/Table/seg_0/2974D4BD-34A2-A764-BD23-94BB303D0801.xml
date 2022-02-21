@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="USER_SKILLS" directorySegmentName="seg_0" id="2974D4BD-34A2-A764-BD23-94BB303D0801">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:27 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<schemaObject>8D4513D4-449F-C609-5293-ADDC18709549</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>FA915AED-F307-D7F0-23CF-75B4A55B2FA3</segment>
+<tableSpace>FDC0FBBE-8412-1F38-419C-B6365F0E088D</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SKILL_TITLE" id="53CF41CC-8F1C-9843-716A-29781654A106">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USERNAME" id="5A75124D-4B82-94BB-86FF-B0D4FDE34570">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SKILL_ID" id="A6A23E59-62E2-199D-F7F0-0A9E45C73FE1">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USER_ID" id="C98DE65A-F484-4EF8-72A1-6D79918DA5EE">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="COMP_KEY" id="C139DEA8-DFCB-DD47-1241-B9ACE320ABE0">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<schemaObject>8D4513D4-449F-C609-5293-ADDC18709549</schemaObject>
+<segment>B3DD87CC-F527-BD51-86BB-944B451F98C8</segment>
+<tableSpace>FDC0FBBE-8412-1F38-419C-B6365F0E088D</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_USER_SKILLS_SK" id="1048C4A0-B268-059F-AE6F-110B43E7E10D">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_USER_SKILLS" id="D903FCD8-6A2A-AF2A-9C02-A58DA631FA52">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="COMP_KEY" id="47462A68-59A1-2E7F-CC49-47F5E35DDB3E">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<segment>B3DD87CC-F527-BD51-86BB-944B451F98C8</segment>
+<tableSpace>FDC0FBBE-8412-1F38-419C-B6365F0E088D</tableSpace>
+<existingIndex>C139DEA8-DFCB-DD47-1241-B9ACE320ABE0</existingIndex>
+<indexSegment>B3DD87CC-F527-BD51-86BB-944B451F98C8</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

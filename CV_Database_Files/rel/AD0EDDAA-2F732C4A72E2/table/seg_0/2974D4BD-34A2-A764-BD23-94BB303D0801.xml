@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2974D4BD-34A2-A764-BD23-94BB303D0801" schemaObject="8D4513D4-449F-C609-5293-ADDC18709549" name="USER_SKILLS">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>ROOT</sourceObjSchema>
+<sourceObjName>USER_SKILLS</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:27 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USER_ID" id="C98DE65A-F484-4EF8-72A1-6D79918DA5EE">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>USER_SKILLS</sourceObjSchema>
+<sourceObjName>USER_ID</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA1F3181-1C30-0D99-3D1D-8B526AD3C6B9" referredColumn="0E8256EF-57FA-FC0D-EB75-D76E1A1D9FA7"/>
+</associations>
+</Column>
+<Column name="SKILL_ID" id="A6A23E59-62E2-199D-F7F0-0A9E45C73FE1">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>USER_SKILLS</sourceObjSchema>
+<sourceObjName>SKILL_ID</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA05DED4-E529-5A59-4F75-3647D55E9C9A" referredColumn="85A718A1-89C7-1D83-8762-DA82D2982656"/>
+</associations>
+</Column>
+<Column name="USERNAME" id="5A75124D-4B82-94BB-86FF-B0D4FDE34570">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>USER_SKILLS</sourceObjSchema>
+<sourceObjName>USERNAME</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SKILL_TITLE" id="53CF41CC-8F1C-9843-716A-29781654A106">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>USER_SKILLS</sourceObjSchema>
+<sourceObjName>SKILL_TITLE</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="47462A68-59A1-2E7F-CC49-47F5E35DDB3E" name="COMP_KEY">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>ROOT</sourceObjSchema>
+<sourceObjName>COMP_KEY</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C98DE65A-F484-4EF8-72A1-6D79918DA5EE"/>
+<colUsage columnID="A6A23E59-62E2-199D-F7F0-0A9E45C73FE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C139DEA8-DFCB-DD47-1241-B9ACE320ABE0" schemaObject="8D4513D4-449F-C609-5293-ADDC18709549" name="COMP_KEY">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>ROOT</sourceObjSchema>
+<sourceObjName>COMP_KEY</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C98DE65A-F484-4EF8-72A1-6D79918DA5EE"/>
+<colUsage columnID="A6A23E59-62E2-199D-F7F0-0A9E45C73FE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D903FCD8-6A2A-AF2A-9C02-A58DA631FA52" name="FK_USER_SKILLS">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C98DE65A-F484-4EF8-72A1-6D79918DA5EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1048C4A0-B268-059F-AE6F-110B43E7E10D" name="FK_USER_SKILLS_SK">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6A23E59-62E2-199D-F7F0-0A9E45C73FE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

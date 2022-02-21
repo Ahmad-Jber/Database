@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="ROOT" directorySegmentName="seg_0" id="9770AEF1-F4A0-A1A5-7309-F9A9CC4AC3C1">
+<sourceConnName>connection</sourceConnName>
+<sourceObjName>ROOT</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:27 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<schemaObject>8D4513D4-449F-C609-5293-ADDC18709549</schemaObject>
+</UserOraclev10g>

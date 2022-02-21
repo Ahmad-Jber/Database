@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FA6EEB22-2D1A-7648-61F5-644391ACD765" schemaObject="8D4513D4-449F-C609-5293-ADDC18709549" name="USER_CERTIFICATIONS">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>ROOT</sourceObjSchema>
+<sourceObjName>USER_CERTIFICATIONS</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:27 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USER_ID" id="7729011D-2A3A-A307-2505-990EE6F93B6B">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>USER_CERTIFICATIONS</sourceObjSchema>
+<sourceObjName>USER_ID</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A745DC94-A361-659D-CE93-47019D81DF1F" referredColumn="0E8256EF-57FA-FC0D-EB75-D76E1A1D9FA7"/>
+</associations>
+</Column>
+<Column name="CERT_ID" id="108F9505-3A0A-AAD9-6CEA-ABAB5B886340">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>USER_CERTIFICATIONS</sourceObjSchema>
+<sourceObjName>CERT_ID</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0A5B6E25-AB23-FAC2-536B-AD209FA81FEE" referredColumn="B3734AC0-2DB3-54D6-E087-96BB7FBEB42F"/>
+</associations>
+</Column>
+<Column name="USERNAME" id="A2AB31EA-7EE4-7D52-2AEC-4F571CD5C30C">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>USER_CERTIFICATIONS</sourceObjSchema>
+<sourceObjName>USERNAME</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CERT_TITLE" id="A98C2CAE-6A55-2C14-354C-768B96F00410">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>USER_CERTIFICATIONS</sourceObjSchema>
+<sourceObjName>CERT_TITLE</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D6B3C39A-FF3B-B9A0-C7A1-937C1C380C13" name="COMP_KEY_UC">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>ROOT</sourceObjSchema>
+<sourceObjName>COMP_KEY_UC</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7729011D-2A3A-A307-2505-990EE6F93B6B"/>
+<colUsage columnID="108F9505-3A0A-AAD9-6CEA-ABAB5B886340"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4328E238-09C4-FDA6-5CD3-A45F0188EEDA" schemaObject="8D4513D4-449F-C609-5293-ADDC18709549" name="COMP_KEY_UC">
+<sourceConnName>connection</sourceConnName>
+<sourceObjSchema>ROOT</sourceObjSchema>
+<sourceObjName>COMP_KEY_UC</sourceObjName>
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7729011D-2A3A-A307-2505-990EE6F93B6B"/>
+<colUsage columnID="108F9505-3A0A-AAD9-6CEA-ABAB5B886340"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E76540B-AFDA-5CE8-CD18-E24B34817542" name="FK_USER_CERTIFICATIONS_CE">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="108F9505-3A0A-AAD9-6CEA-ABAB5B886340"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32592EE9-57D2-16D8-8239-AE7C3F2B01C8" name="FK_USER_CERTIFICATIONS_US">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7729011D-2A3A-A307-2505-990EE6F93B6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

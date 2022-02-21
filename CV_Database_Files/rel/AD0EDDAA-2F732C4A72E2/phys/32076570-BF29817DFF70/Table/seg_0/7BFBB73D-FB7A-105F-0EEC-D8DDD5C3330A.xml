@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="CONTACTS" directorySegmentName="seg_0" id="7BFBB73D-FB7A-105F-0EEC-D8DDD5C3330A">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:27 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<schemaObject>8D4513D4-449F-C609-5293-ADDC18709549</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>FA915AED-F307-D7F0-23CF-75B4A55B2FA3</segment>
+<tableSpace>FDC0FBBE-8412-1F38-419C-B6365F0E088D</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="O_TYPE_DESC" id="05A763E8-3FCF-C869-8C84-86CCA3CB9F64">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TYPE_ID" id="7A07B5B4-09BD-EDCC-CE72-7DEFA99868FE">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TYPE_DESC" id="BC6DCE49-77AD-CA9B-B629-FBF0C77CD2F8">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CONTACTS_PK" id="EAE019DE-6C76-B2B1-5729-92E6B3E05902">
+<createdBy>ahmad</createdBy>
+<createdTime>2022-02-21 14:41:28 UTC</createdTime>
+<ownerDesignName>CV_Database_Files</ownerDesignName>
+<schemaObject>8D4513D4-449F-C609-5293-ADDC18709549</schemaObject>
+<segment>B3DD87CC-F527-BD51-86BB-944B451F98C8</segment>
+<tableSpace>FDC0FBBE-8412-1F38-419C-B6365F0E088D</tableSpace>
+<indexSegment>B3DD87CC-F527-BD51-86BB-944B451F98C8</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>
