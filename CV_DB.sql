@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  File created - Wednesday-February-23-2022   
+--  File created - Saturday-February-26-2022   
 --------------------------------------------------------
 DROP SEQUENCE "ROOT"."CERTIFICATIONS_ID_SEQ";
 DROP SEQUENCE "ROOT"."CONTACT_ID_SEQ";
@@ -33,7 +33,7 @@ DROP TABLE "ROOT"."USER_SKILLS" cascade constraints;
 --  DDL for Sequence SKILL_ID_SEQ
 --------------------------------------------------------
 
-   CREATE SEQUENCE  "ROOT"."SKILL_ID_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1000 CACHE 20 NOORDER  NOCYCLE ;
+   CREATE SEQUENCE  "ROOT"."SKILL_ID_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1020 CACHE 20 NOORDER  NOCYCLE ;
 --------------------------------------------------------
 --  DDL for Table CERTIFICATIONS
 --------------------------------------------------------
@@ -169,10 +169,12 @@ REM INSERTING into ROOT.LANGUAGES
 SET DEFINE OFF;
 REM INSERTING into ROOT.SKILLS
 SET DEFINE OFF;
+Insert into ROOT.SKILLS (SKILL_ID,TITLE) values (1000,'sadf');
 REM INSERTING into ROOT.USERS
 SET DEFINE OFF;
 Insert into ROOT.USERS (USER_ID,FULL_NAME,O_NAME,PASS,GENDER,BIRTHDATE) values ('ahmad2001','Ahmad Natheer Yousef Jber','???? ???',1234,'M',to_date('27-DEC-01','DD-MON-RR'));
-commit;
+Insert into ROOT.USERS (USER_ID,FULL_NAME,O_NAME,PASS,GENDER,BIRTHDATE) values ('hamza.hasan','Hamza Mustafa Hasan','???? ???',1234,'M',to_date('10-SEP-01','DD-MON-RR'));
+Insert into ROOT.USERS (USER_ID,FULL_NAME,O_NAME,PASS,GENDER,BIRTHDATE) values ('hamza','werfty6uj','asdfvgbhnjm',1234,'M',to_date('18-FEB-22','DD-MON-RR'));
 REM INSERTING into ROOT.USER_CERTIFICATIONS
 SET DEFINE OFF;
 REM INSERTING into ROOT.USER_CONTACTS
