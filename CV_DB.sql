@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  File created - Sunday-March-06-2022   
+--  File created - Saturday-March-12-2022   
 --------------------------------------------------------
 DROP SEQUENCE "ROOT"."CERTIFICATIONS_ID_SEQ";
 DROP SEQUENCE "ROOT"."CONTACT_ID_SEQ";
@@ -14,13 +14,11 @@ DROP TABLE "ROOT"."USER_CERTIFICATIONS" cascade constraints;
 DROP TABLE "ROOT"."USER_CONTACTS" cascade constraints;
 DROP TABLE "ROOT"."USER_LANGUAGES" cascade constraints;
 DROP TABLE "ROOT"."USER_SKILLS" cascade constraints;
-DROP PROCEDURE "ROOT"."INSERT_INTO_USER_CERT";
-DROP PROCEDURE "ROOT"."SELECT_FROM_CERT";
 --------------------------------------------------------
 --  DDL for Sequence CERTIFICATIONS_ID_SEQ
 --------------------------------------------------------
 
-   CREATE SEQUENCE  "ROOT"."CERTIFICATIONS_ID_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 180 CACHE 20 NOORDER  NOCYCLE ;
+   CREATE SEQUENCE  "ROOT"."CERTIFICATIONS_ID_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 292 CACHE 20 NOORDER  NOCYCLE ;
 --------------------------------------------------------
 --  DDL for Sequence CONTACT_ID_SEQ
 --------------------------------------------------------
@@ -30,17 +28,17 @@ DROP PROCEDURE "ROOT"."SELECT_FROM_CERT";
 --  DDL for Sequence LANGUAGES_ID_SEQ
 --------------------------------------------------------
 
-   CREATE SEQUENCE  "ROOT"."LANGUAGES_ID_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 120 CACHE 20 NOORDER  NOCYCLE ;
+   CREATE SEQUENCE  "ROOT"."LANGUAGES_ID_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 236 CACHE 20 NOORDER  NOCYCLE ;
 --------------------------------------------------------
 --  DDL for Sequence SKILL_ID_SEQ
 --------------------------------------------------------
 
-   CREATE SEQUENCE  "ROOT"."SKILL_ID_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1040 CACHE 20 NOORDER  NOCYCLE ;
+   CREATE SEQUENCE  "ROOT"."SKILL_ID_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1121 CACHE 20 NOORDER  NOCYCLE ;
 --------------------------------------------------------
 --  DDL for Sequence USER_CONTACTS_SEQ
 --------------------------------------------------------
 
-   CREATE SEQUENCE  "ROOT"."USER_CONTACTS_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 160 CACHE 20 NOORDER  NOCYCLE ;
+   CREATE SEQUENCE  "ROOT"."USER_CONTACTS_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 248 CACHE 20 NOORDER  NOCYCLE ;
 --------------------------------------------------------
 --  DDL for Table CERTIFICATIONS
 --------------------------------------------------------
@@ -86,7 +84,7 @@ DROP PROCEDURE "ROOT"."SELECT_FROM_CERT";
    (	"USER_ID" VARCHAR2(50 BYTE), 
 	"FULL_NAME" VARCHAR2(400 BYTE), 
 	"O_NAME" VARCHAR2(250 BYTE), 
-	"PASS" NUMBER(*,0), 
+	"PASS" VARCHAR2(12 BYTE), 
 	"GENDER" VARCHAR2(1 BYTE), 
 	"BIRTHDATE" DATE
    ) SEGMENT CREATION IMMEDIATE 
@@ -142,86 +140,56 @@ DROP PROCEDURE "ROOT"."SELECT_FROM_CERT";
    (	"USER_ID" VARCHAR2(50 BYTE), 
 	"SKILL_ID" NUMBER(*,0), 
 	"SKILL_TITLE" VARCHAR2(100 BYTE), 
-	"SKILL_DESC" CLOB
+	"SKILL_DESC" VARCHAR2(4000 BYTE)
    ) SEGMENT CREATION IMMEDIATE 
   PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
   STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
   PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
-  TABLESPACE "USERS" 
- LOB ("SKILL_DESC") STORE AS BASICFILE (
-  TABLESPACE "USERS" ENABLE STORAGE IN ROW CHUNK 8192 RETENTION 
-  NOCACHE LOGGING 
-  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
-  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)) ;
+  TABLESPACE "USERS" ;
 REM INSERTING into ROOT.CERTIFICATIONS
 SET DEFINE OFF;
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (153,'sdfv','qawsd');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (158,'sdfv','qawsd');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (156,'sdfv','qawsd');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (149,'sdfv','qawsd');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (151,'sdfv','qawsd');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (125,'wedrfg','qwer');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (154,'sdfv','qawsd');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (127,'2werfg','qwedfr');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (148,'qwedfgb','ewfrgb');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (150,'sdfv','qawsd');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (152,'sdfv','qawsd');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (157,'sdfv','qawsd');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (159,'rtyhj','werftgh');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (164,' 7hucji8','tyhuj');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (166,'rtgefehytgfesdzdfvf','artegf');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (169,'tghynjmbk','tg5y6huj');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (170,'rgtyhju','4rtw5gy6hju k,');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (171,'fdgzs','rsg');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (123,'1234rtyh','23r4t5y6');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (140,'erf','wer');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (142,'efrgghn','efrwe');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (144,'wedfrgb','sdcf');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (146,'ertyh','`12we3r4tyh');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (155,'sdfv','qawsd');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (165,'78i9','56y7u8i78i');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (167,'rtgefehytgfesdzdfvf','artegf');
-Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (168,'rtgefehytgfesdzdfvf','artegf');
+Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (252,'Course','Web ');
+Insert into ROOT.CERTIFICATIONS (CERT_ID,TYPE,TITLE) values (272,'DS Traning','Front-end Developer');
+commit;
 REM INSERTING into ROOT.LANGUAGES
 SET DEFINE OFF;
-Insert into ROOT.LANGUAGES (LANG_ID,LANG_NAME) values (105,'aregeta');
-Insert into ROOT.LANGUAGES (LANG_ID,LANG_NAME) values (106,'aetgraefd');
-Insert into ROOT.LANGUAGES (LANG_ID,LANG_NAME) values (108,'aetgraefd');
-Insert into ROOT.LANGUAGES (LANG_ID,LANG_NAME) values (101,'7u8i');
-Insert into ROOT.LANGUAGES (LANG_ID,LANG_NAME) values (102,'78ij9');
-Insert into ROOT.LANGUAGES (LANG_ID,LANG_NAME) values (111,'yhujki,l.');
-Insert into ROOT.LANGUAGES (LANG_ID,LANG_NAME) values (113,'yujk');
-Insert into ROOT.LANGUAGES (LANG_ID,LANG_NAME) values (115,'zsdfgf');
-Insert into ROOT.LANGUAGES (LANG_ID,LANG_NAME) values (109,'aregeta');
-Insert into ROOT.LANGUAGES (LANG_ID,LANG_NAME) values (103,'78i9o');
-Insert into ROOT.LANGUAGES (LANG_ID,LANG_NAME) values (107,'aregeta');
-Insert into ROOT.LANGUAGES (LANG_ID,LANG_NAME) values (110,'hytnjumk,nl .h');
-Insert into ROOT.LANGUAGES (LANG_ID,LANG_NAME) values (112,'yhujnk');
-Insert into ROOT.LANGUAGES (LANG_ID,LANG_NAME) values (114,'zfsg');
-Insert into ROOT.LANGUAGES (LANG_ID,LANG_NAME) values (100,'y7u6xci8 ');
-Insert into ROOT.LANGUAGES (LANG_ID,LANG_NAME) values (104,'aetgraefd');
+Insert into ROOT.LANGUAGES (LANG_ID,LANG_NAME) values (217,'English');
+Insert into ROOT.LANGUAGES (LANG_ID,LANG_NAME) values (196,'Arabic');
+Insert into ROOT.LANGUAGES (LANG_ID,LANG_NAME) values (197,'English');
+Insert into ROOT.LANGUAGES (LANG_ID,LANG_NAME) values (216,'Arabic');
+commit;
 REM INSERTING into ROOT.SKILLS
 SET DEFINE OFF;
-Insert into ROOT.SKILLS (SKILL_ID,TITLE) values (1020,'cv');
+Insert into ROOT.SKILLS (SKILL_ID,TITLE) values (1081,'Java Developer');
+Insert into ROOT.SKILLS (SKILL_ID,TITLE) values (1101,'Front end');
+commit;
 REM INSERTING into ROOT.USERS
 SET DEFINE OFF;
-Insert into ROOT.USERS (USER_ID,FULL_NAME,O_NAME,PASS,GENDER,BIRTHDATE) values ('ahmad2001','frghjhnmk,l;','ghjnkm',1234,'M',to_date('17-MAR-22','DD-MON-RR'));
+Insert into ROOT.USERS (USER_ID,FULL_NAME,O_NAME,PASS,GENDER,BIRTHDATE) values ('ITPro2025','Ahmad Natheer Yousef Jber','???? ???? ???? ???','1234','M',to_date('27-DEC-01','DD-MON-RR'));
+Insert into ROOT.USERS (USER_ID,FULL_NAME,O_NAME,PASS,GENDER,BIRTHDATE) values ('tmansour720','Tamer Mohammad Ahmad Mansour','???? ???? ???? ?????','t1234','M',to_date('10-AUG-01','DD-MON-RR'));
+commit;
 REM INSERTING into ROOT.USER_CERTIFICATIONS
 SET DEFINE OFF;
+Insert into ROOT.USER_CERTIFICATIONS (USER_ID,CERT_ID,CERT_TITLE,CERT_SOURCE) values ('ITPro2025',252,'Web ','ALQuds Center');
+Insert into ROOT.USER_CERTIFICATIONS (USER_ID,CERT_ID,CERT_TITLE,CERT_SOURCE) values ('tmansour720',272,'Front-end Developer','Axous Academy');
+commit;
 REM INSERTING into ROOT.USER_CONTACTS
 SET DEFINE OFF;
-Insert into ROOT.USER_CONTACTS (USER_ID,CONTACT_NUM,CONTACT_ADDRESS) values ('ahmad2001',140,'y7hu8xijo');
-Insert into ROOT.USER_CONTACTS (USER_ID,CONTACT_NUM,CONTACT_ADDRESS) values ('ahmad2001',142,'fasedfgareg');
-Insert into ROOT.USER_CONTACTS (USER_ID,CONTACT_NUM,CONTACT_ADDRESS) values ('ahmad2001',145,'yujki,lo.m;/');
-Insert into ROOT.USER_CONTACTS (USER_ID,CONTACT_NUM,CONTACT_ADDRESS) values ('ahmad2001',146,'yujkml,.');
-Insert into ROOT.USER_CONTACTS (USER_ID,CONTACT_NUM,CONTACT_ADDRESS) values ('ahmad2001',147,'zfghjkj7yhtrge');
-Insert into ROOT.USER_CONTACTS (USER_ID,CONTACT_NUM,CONTACT_ADDRESS) values ('ahmad2001',143,'fasedfgareg');
-Insert into ROOT.USER_CONTACTS (USER_ID,CONTACT_NUM,CONTACT_ADDRESS) values ('ahmad2001',144,'fasedfgareg');
-Insert into ROOT.USER_CONTACTS (USER_ID,CONTACT_NUM,CONTACT_ADDRESS) values ('ahmad2001',141,'67h y8jiu9ok0p;');
+Insert into ROOT.USER_CONTACTS (USER_ID,CONTACT_NUM,CONTACT_ADDRESS) values ('ITPro2025',208,'+970592564268');
+Insert into ROOT.USER_CONTACTS (USER_ID,CONTACT_NUM,CONTACT_ADDRESS) values ('tmansour720',228,'+972 59-759-8709');
+commit;
 REM INSERTING into ROOT.USER_LANGUAGES
 SET DEFINE OFF;
+Insert into ROOT.USER_LANGUAGES (USER_ID,LANG_ID,LANG_NAME) values ('ITPro2025',196,'Arabic');
+Insert into ROOT.USER_LANGUAGES (USER_ID,LANG_ID,LANG_NAME) values ('tmansour720',196,'Arabic');
+Insert into ROOT.USER_LANGUAGES (USER_ID,LANG_ID,LANG_NAME) values ('ITPro2025',197,'English');
+Insert into ROOT.USER_LANGUAGES (USER_ID,LANG_ID,LANG_NAME) values ('tmansour720',217,'English');
+commit;
 REM INSERTING into ROOT.USER_SKILLS
 SET DEFINE OFF;
+Insert into ROOT.USER_SKILLS (USER_ID,SKILL_ID,SKILL_TITLE,SKILL_DESC) values ('ITPro2025',1081,'Java Developer','Any Thing');
+Insert into ROOT.USER_SKILLS (USER_ID,SKILL_ID,SKILL_TITLE,SKILL_DESC) values ('tmansour720',1101,'Front end','Im tranee in axous ag in react framework');
+commit;
 --------------------------------------------------------
 --  DDL for Index COMP_KEY_UL
 --------------------------------------------------------
@@ -302,30 +270,6 @@ ALTER TRIGGER "ROOT"."SKILL_BIR" ENABLE;
 END;
 /
 ALTER TRIGGER "ROOT"."USER_CONTACTS_SEQ" ENABLE;
---------------------------------------------------------
---  DDL for Procedure INSERT_INTO_USER_CERT
---------------------------------------------------------
-set define off;
-
-  CREATE OR REPLACE PROCEDURE "ROOT"."INSERT_INTO_USER_CERT" (USER_ID IN VARCHAR2,CERT_ID IN NUMBER,CERT_TITLE IN VARCHAR2,CERT_SOURCE IN VARCHAR2)
-    is
-begin
-    insert into USER_CERTIFICATIONS values(USER_ID,CERT_ID,CERT_TITLE,CERT_SOURCE);
-end;
-
-/
---------------------------------------------------------
---  DDL for Procedure SELECT_FROM_CERT
---------------------------------------------------------
-set define off;
-
-  CREATE OR REPLACE PROCEDURE "ROOT"."SELECT_FROM_CERT" (IN_TITLE IN VARCHAR2,OUT_CERT_ID OUT NUMBER)
-    is
-begin
-    SELECT CERT_ID INTO OUT_CERT_ID FROM CERTIFICATIONS where CERTIFICATIONS.TITLE=IN_TITLE;
-end;
-
-/
 --------------------------------------------------------
 --  Constraints for Table USER_CONTACTS
 --------------------------------------------------------
